@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD USER"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#759"
+            />
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="First name"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/editSurname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Surname"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/degreeProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+            <RadioButton
+                android:id="@+id/rbTite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tietotekniikka"
+                />
+            <RadioButton
+                android:id="@+id/rbTuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuotantotalous"
+                />
+            <RadioButton
+                android:id="@+id/rbLate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laskennallinen tekniikka"
+                />
+            <RadioButton
+                android:id="@+id/rbSatky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sähkötekniikka"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonAddUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickAdd"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
