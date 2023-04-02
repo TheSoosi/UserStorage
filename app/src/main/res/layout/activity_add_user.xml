@@ -63,28 +63,61 @@
             <RadioButton
                 android:id="@+id/rbTite"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="Tietotekniikka"
                 />
             <RadioButton
                 android:id="@+id/rbTuta"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="Tuotantotalous"
                 />
             <RadioButton
                 android:id="@+id/rbLate"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="Laskennallinen tekniikka"
                 />
             <RadioButton
                 android:id="@+id/rbSatky"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="Sähkötekniikka"
                 />
         </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbKandi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Kandidaatin tutkinto"
+            />
+
+        <CheckBox
+            android:id="@+id/cbDI"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Diploomi-insinöörin tutkinto"
+            />
+
+        <CheckBox
+            android:id="@+id/cbDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Tekniikan tohtorin tutkinto"
+            />
+
+        <CheckBox
+            android:id="@+id/cbSwim"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Uimamaisteri"
+            />
 
         <Button
             android:id="@+id/buttonAddUser"

@@ -23,7 +23,7 @@
             android:textColor="#759"
             />
 
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/userList"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

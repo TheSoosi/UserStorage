@@ -1,6 +1,8 @@
 package com.example.userstorage;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.ListView;
@@ -14,9 +16,10 @@ public class ListUsersActivity extends AppCompatActivity {
 
         UserStorage storage = UserStorage.getInstance();
 
-        UserListAdapter adapter = new UserListAdapter(this, storage.getUsers());
+        RecyclerView recyclerView = findViewById(R.id.userList);
 
-        ListView list = findViewById(R.id.userList);
-        list.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new UserListAdapter(storage.getUsers(), this));
+
     }
 }
